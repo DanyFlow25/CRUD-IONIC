@@ -1,21 +1,10 @@
-# Ionic + Angular CRUD (Items)
+# Frontend - Ionic (web) demo
 
-Proyecto mínimo listo para conectar con el backend Node/Express en `http://localhost:3000/api/items`.
+Este frontend es una página estática que usa Ionic Web Components vía CDN y consume la API del backend en `http://localhost:3000/api/items`.
 
-Requisitos en tu máquina:
-- Node.js (>=18 recomendable)
-- npm
-- Ionic CLI (recomendado): `npm install -g @ionic/cli`
+Pasos:
 
-Instalación y ejecución (PowerShell):
+1. Asegúrate de que el backend esté corriendo (`npm run dev` en la carpeta `backend`).
+2. Abrir `c:\Users\Danie\Documents\IONIC\frontend\index.html` en el navegador (doble click) o servir la carpeta con un servidor estático.
 
-```powershell
-cd c:\Users\Danie\Documents\IONIC\ionic-angular
-npm install
-# Ejecutar la app (abre navegador)
-ionic serve
-```
-
-Notas:
-- Si no quieres instalar Ionic CLI, puedes ejecutar `npm start` que también lanza `ionic serve` si la CLI está instalada localmente.
-- El servicio `ItemsService` apunta por defecto a `http://localhost:3000/api/items`. Cámbialo si tu backend corre en otra URL.
+La página permite agregar, editar y borrar items.
