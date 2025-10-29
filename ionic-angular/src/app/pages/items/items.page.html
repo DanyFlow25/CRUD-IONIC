@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Items</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-input placeholder="Nombre" [(ngModel)]="name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input placeholder="Descripción" [(ngModel)]="description"></ion-input>
+  </ion-item>
+  <ion-button expand="block" (click)="add()">Agregar</ion-button>
+
+  <ion-list>
+    <ion-item *ngFor="let it of items">
+      <ion-label>
+        <h2>{{ it.name }}</h2>
+        <p>{{ it.description }}</p>
+      </ion-label>
+      <ion-button slot="end" size="small" color="primary" (click)="edit(it)">Editar</ion-button>
+      <ion-button slot="end" size="small" color="danger" (click)="remove(it)">Borrar</ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>
