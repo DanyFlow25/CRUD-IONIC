@@ -3,36 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ionic + MongoDB CRUD (Demo)</title>
+    <title>Ionic Angular CRUD</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
-    <style>
-      body { --ion-safe-area-top: 20px; }
-      .container { padding: 16px; }
-      ion-list { margin-top: 12px; }
-    </style>
   </head>
   <body>
-    <ion-app>
-      <ion-header>
-        <ion-toolbar>
-          <ion-title>CRUD - Ionic + MongoDB</ion-title>
-        </ion-toolbar>
-      </ion-header>
-      <ion-content class="container">
-        <ion-item>
-          <ion-input id="nameInput" placeholder="Nombre"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-input id="descInput" placeholder="Descripción"></ion-input>
-        </ion-item>
-        <ion-button expand="block" id="addBtn">Agregar</ion-button>
-
-        <ion-list id="itemsList"></ion-list>
-      </ion-content>
-    </ion-app>
-
+    <app-root></app-root>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
-    <script src="app.js"></script>
   </body>
 </html>

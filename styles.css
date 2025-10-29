@@ -1,0 +1,3 @@
+/* Minimal global styles for Ionic app */
+html, body, app-root, ion-app, ion-content { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
